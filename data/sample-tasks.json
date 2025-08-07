@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1704067200000,
+    "name": "Complete TaskLit Project",
+    "description": "Finish building the TaskLit web application with all features",
+    "deadline": "2024-01-15T18:00:00.000Z",
+    "completed": false,
+    "createdAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "id": 1704153600000,
+    "name": "Read The Great Gatsby",
+    "description": "Start reading the classic novel by F. Scott Fitzgerald",
+    "deadline": "2024-01-20T20:00:00.000Z",
+    "completed": true,
+    "createdAt": "2024-01-02T14:30:00.000Z"
+  },
+  {
+    "id": 1704240000000,
+    "name": "Setup Development Environment",
+    "description": "Install Node.js, npm, and configure the development environment",
+    "deadline": "2024-01-10T16:00:00.000Z",
+    "completed": true,
+    "createdAt": "2024-01-03T09:15:00.000Z"
+  },
+  {
+    "id": 1704326400000,
+    "name": "Write Documentation",
+    "description": "Create comprehensive documentation for the TaskLit application",
+    "deadline": "2024-01-25T17:00:00.000Z",
+    "completed": false,
+    "createdAt": "2024-01-04T11:45:00.000Z"
+  },
+  {
+    "id": 1704412800000,
+    "name": "Test Application Features",
+    "description": "Test all features including task management and eBook library",
+    "deadline": "2024-01-12T15:30:00.000Z",
+    "completed": false,
+    "createdAt": "2024-01-05T13:20:00.000Z"
+  }
+] 
