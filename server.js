@@ -169,7 +169,12 @@ app.get('/api/books/:id', async (req, res) => {
 
 // Serve React app for any other routes
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  const indexPath = path.join(__dirname, 'client/build', 'index.html');
+  if (fs.existsSync(indexPath)) {
+    res.sendFile(indexPath);
+  } else {
+    res.status(404).send('React build not found. Please run: npm run build');
+  }
 });
 
 // Initialize and start server
