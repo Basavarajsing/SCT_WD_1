@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { 
   Row, Col, Card, Button, Form, Modal, 
@@ -100,9 +101,9 @@ function TaskList() {
     return new Date(dateString).toLocaleDateString();
   };
 
-  const isOverdue = (deadline) => {
+  const isOverdue = (deadline, completed) => {
     if (!deadline) return false;
-    return new Date(deadline) < new Date() && !task.completed;
+    return new Date(deadline) < new Date() && !completed;
   };
 
   if (loading) {
@@ -229,7 +230,7 @@ function TaskList() {
                       <i className="fas fa-calendar me-1"></i>
                       {formatDate(task.deadline)}
                     </small>
-                    {isOverdue(task.deadline) && (
+                    {isOverdue(task.deadline, task.completed) && (
                       <Badge bg="danger">Overdue</Badge>
                     )}
                   </div>
@@ -302,4 +303,4 @@ function TaskList() {
   );
 }
 
-export default TaskList; 
+export default TaskList;
